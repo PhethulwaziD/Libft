@@ -6,7 +6,7 @@
 /*   By: pdonga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/02 15:35:24 by pdonga            #+#    #+#             */
-/*   Updated: 2019/07/02 16:35:29 by pdonga           ###   ########.fr       */
+/*   Updated: 2019/10/07 09:24:49 by pdonga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,6 @@
 # include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
-
-typedef	struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
 
 size_t				ft_strlen(const char *str);
 char				*ft_strcpy(char *dst, const char *src);

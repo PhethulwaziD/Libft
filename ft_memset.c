@@ -6,7 +6,7 @@
 /*   By: pdonga <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:50:25 by pdonga            #+#    #+#             */
-/*   Updated: 2019/07/19 20:18:51 by pdonga           ###   ########.fr       */
+/*   Updated: 2019/10/12 07:29:24 by pdonga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ void				*ft_memset(void *dst, int ch, size_t len)
 
 	i = 0;
 	pdst = (unsigned char*)dst;
-	while (i < len)
+	while (i < len && pdst[i])
+	{
 		pdst[i++] = (unsigned char)ch;
+	}
 	return (dst);
 }
